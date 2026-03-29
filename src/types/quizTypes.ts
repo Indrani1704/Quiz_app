@@ -1,15 +1,15 @@
-interface Question {
+export interface Question {
   id: number;
   question: string;
   options: string[];
   correctAnswer: string;
-  explanation: string;
-  hint?: string; 
+  explanation?: string;
+  hint?: string;
 }
 
 export interface AnswerRecord {
   question: string;
-  selected: string | null; 
+  selected: string | null;
   correct: string;
   isCorrect: boolean;
 }
